@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  padding: 0;
+  border: none;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  display: grid;
+  grid-template-rows: 15% auto 5%;
+  height: 99vh;
+  background-color: #92a8d1;
+}
+body h1,
+h2 {
+  text-align: center;
+}
+
+#titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#inputsContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+#settingsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#timeDiv {
+  align-self: flex-start;
+}
+label {
+  font-size: 30px;
+}
+
+#inputsContainer a{
+  text-decoration: none;
+  color:black
+}
+#inputsContainer a:visited{
+  text-decoration: none;
+  color:black
+}
+#inputsContainer h1{
+  margin-bottom:20px;
+  margin-top: 10px;
+  margin-bottom:30px;
+  padding:5px;
+  background-color: white;
+  border-radius:5px;
+}
+select {
+  font-size: 25px;
+  background-color: #d7e1f3;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  text-align-last: center;
+  cursor: pointer;
+}
+
+#restartButton {
+  display: none;
+}
+#buttons button {
+  margin-top:20px;
+  font-size: 25px;
+  padding: 4px 14px;
+  border-radius: 5px;
+  background-color: #d7e1f3;
+  border: 1.5px solid black;
+  cursor: pointer;
+  transition: 100ms ease;  
+}
+#buttons button:hover {        
+  transform: scale(1.04);      
+}
+#container {
+  justify-content: center;        
+  align-items: center;        
+  display: none;        
+}
+
+#cardsDiv {
+  width: 40%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 100px;
+  grid-row-gap: 40px;
+}
+.card {
+  background-color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.05s ease;
+}
+#message {
+  text-align: center;
+  display: none;
+}
+#wrongsSpan {
+  margin: 0px 4px;
+}
+#endMessage {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-align: center;
+}
+#countDown {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+    display: grid;
+    grid-template-rows: 14% auto 3%;
+    height: 82vh;
+  }
+  #inputsContainer div {
+    text-align: center;
+  }
+  #cardsDiv {
+    width: 80%;
+    height: 80%;
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+  }
+  label {
+    font-size: 24px;
+  }
+  body h1 {
+    font-size: 25px;
+  }
+  select {
+    font-size: 20px;
+  }
+  #inputsContainer div {
+    margin-bottom: 5px;
+    margin-top:5px;
+
+  }
+  #inputsContainer h1{
+      margin-bottom:15px;
+      margin-top:0px;
+  }
+
+  #inputsContainer input {
+    font-size: 17px;
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: 1.5px solid black;
+  }
+  #countDown {
+  font-size: 100px;
+}
+  #buttons button {
+  margin-top:5px;
+}
+
+}

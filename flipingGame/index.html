@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guessing game</title>
+</head>
+<body> 
+    <div id="inputsContainer">
+        <form id="settingsForm">
+            <div id="numberOfDiv">
+                <h1><a href="./historyPage/gamesHistory.html">Game history</a></h1>
+                <label>Difficulty:</label>
+                <select id="difficulty" name="difficulty">
+                    <option>easy</option>
+                    <option selected>medium</option>
+                    <option>hard</option>
+                </select>  
+            </div>
+            <div id="buttons">             
+                <button id="startButton">Start</button>
+                <button id="restartButton" onclick="history.go(0)">Restart</button>        
+            </div>
+            <button> </button>
+        </form>
+    </div>
+    <div id="container">
+    <div id="cardsDiv">
+        <div class="card" id="1"></div>
+        <div class="card" id="2"></div>
+        <div class="card" id="3"></div>
+        <div class="card" id="4"></div>
+        <div class="card" id="5"></div>
+        <div class="card" id="6"></div>
+        <div class="card" id="7"></div>
+        <div class="card" id="8"></div>
+        <div class="card" id="9"></div>
+        <div class="card" id="10"></div>
+        <div class="card" id="11"></div>
+        <div class="card" id="12"></div>
+        <div class="card" id="13"></div>
+        <div class="card" id="14"></div>
+        <div class="card" id="15"></div>
+        <div class="card" id="16"></div>
+        <div class="card" id="17"></div>
+        <div class="card" id="18"></div>
+    </div>
+    </div>
+    <div id="message">
+        <h1><span id="wrongsSpan"></span> errors remaining</h1>
+    </div>
+    <p id="countDown"></p>
+    <p id="endMessage"></p>
+    <script src="index.js"></script>
+</body>
+</html>

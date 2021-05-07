@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  padding: 0;
+  border: none;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+
+  background-color: #92a8d1;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+  margin-bottom:20px;
+  margin-top: 10px;
+  margin-bottom:30px;
+  padding:5px;
+  background-color: white;
+  border-radius:5px;
+}
+
+.title a{
+    text-decoration: none;
+    color:black
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+table{
+    width: 40%;
+}
+table th{
+    font-size:35px;
+}
+
+.tableTitle{
+ background-color: rgb(123, 202, 255);
+}
+
+table td{
+    text-align: center;
+    font-size:30px;
+}
+#noTimes{
+    display: none;
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:30px;
+    width: 100%;
+    text-align: center;
+}
+#deleteDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#deleteDiv button{
+  margin-top:20px;
+  font-size: 25px;
+  padding: 4px 14px;
+  border-radius: 5px;
+  background-color: #d7e1f3;
+  border: 1.5px solid black;
+  cursor: pointer;
+  transition: 100ms ease;
+}
+#deleteDiv button:hover {
+  transform: scale(1.04);
+
+}
+@media only screen and (max-width: 750px) {
+  .title h1{
+    margin-bottom:15px;
+    margin-top:5px;
+    font-size:25px;  
+  }
+  table{
+    width: 90%;
+  }
+
+  table th{
+    font-size:25px;
+  }
+
+  table td{
+    font-size:23px;
+  }
+  #deleteDiv button{
+  margin-top:20px;
+  font-size: 20px;
+  padding: 2px 7px;
+  border-radius: 5px;
+  background-color: #d7e1f3;
+  border: 1.5px solid black;
+  cursor: pointer;
+  transition: 100ms ease;
+}
+
+}
