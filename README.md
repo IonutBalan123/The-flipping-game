@@ -7,6 +7,8 @@
     <li>HTML</li>
     <li>CSS 3</li>
     <li>JS</li>
-        <ul>Localhost</ul>
-        <ul>OOP, using classes</ul>
+        <ul>
+            <li> Localhost</li>
+           <li>OOP, using classes</li>
+    </ul>
 </ul>
