@@ -1,1 +1,1 @@
-This is a vanilla js application
+#This is a vanilla js application
